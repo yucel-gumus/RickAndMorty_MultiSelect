@@ -6,16 +6,16 @@ interface PopupStyleProps {
 
 export const selectedContainerStyle: React.CSSProperties = {
   left: 0,
-  width: "73%",
-  height: "35px",
+  width: "85%",
+  height: "auto",
   border: "2px solid #ccc",
   borderRadius: "10px",
-  marginLeft: "140px",
-  marginTop: "50px",
+  marginLeft: "5%",
+  marginTop: "20px",
   padding: "15px",
   overflowX: "auto",
   overflowY: "hidden",
-  whiteSpace: "nowrap"
+  whiteSpace: "nowrap",
 };
 
 export const inputStyle = {
@@ -27,7 +27,7 @@ export const inputStyle = {
   fontSize: "18px",
   backgroundColor: "transparent",
   outline: "none",
-  width: "50%",
+  width: "80%",
 };
 
 export const popupStyle: CSSProperties & PopupStyleProps = {
@@ -38,43 +38,44 @@ export const popupStyle: CSSProperties & PopupStyleProps = {
   maxHeight: "500px",
   scrollbarColor: "skyblue",
   marginTop: "20px",
-  width: "75%",
-  marginLeft: "140px",
+  width: "90%",
+  marginLeft: "5%",
   backgroundColor: "white",
   border: "1px solid #ccc",
   borderRadius: "10px",
 };
 
 export const imageStyle = {
-  width: "75px",
-  height: "75px",
+  width: "50px",
+  height: "50px",
   marginTop: "10px",
   marginRight: "10px",
   borderRadius: "5px",
 };
+
 export const selectedCharactersName = {
   alignItems: "center",
-  marginLeft: "15px",
+  marginLeft: "5px",
   backgroundColor: "lightgray",
   borderRadius: "5px",
   padding: "7px",
   marginBottom: "3px"
 }
+
 export const buttonX = {
-  fontSize: "20px",
+  fontSize: "16px",
   marginLeft: "7px",
   cursor: "pointer",
   borderRadius: "5px",
-  backgroundColor: "darkgray",
+  backgroundColor: "lightblue",
 }
 
 export const ImageContainerStyle = {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  width: "400px",
+  width: "50%",
   height: "auto",
   margin: "0 auto",
   marginTop: "10px",
-
 };
