@@ -1,48 +1,49 @@
-# Getting Started with Create React App
+# Rick and Morty Çoklu Seçim Karakter Arama
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bu proje, kullanıcıların Rick and Morty karakterlerini aramasına ve arama sonuçlarından birden fazla karakter seçmesine olanak tanıyan, TypeScript ile oluşturulmuş bir React uygulamasıdır.
 
-## Available Scripts
+## Özellikler
 
-In the project directory, you can run:
+*   **Karakter Arama:** Rick and Morty evreninden karakterleri arayın.
+*   **Çoklu Seçim:** Birden fazla karakter seçin ve seçimini kaldırın.
+*   **Dinamik Sonuçlar:** Siz yazdıkça arama sonuçları dinamik olarak güncellenir.
+*   **Vurgulama:** Arama sorgusu, sonuçlardaki karakter adları içinde vurgulanır.
+*   **Klavye Navigasyonu:** Ok tuşlarını kullanarak arama sonuçlarında gezinin ve Enter/Tab ile seçim yapın.
+*   **Hata Yönetimi:** Veri çekme hataları için uyarılar gösterir.
+*   **Yüklenme Durumu:** Veri çekilirken bir yüklenme göstergesi gösterir.
+*   **Duyarlı Tasarım:** Temel duyarlı tasarım.
+
+## Kullanılan Teknolojiler
+
+*   React
+*   TypeScript
+*   React Select (veya benzer özel implementasyon)
+*   SweetAlert2 (bildirimler için)
+*   CSS (stil için)
+*   Rick and Morty API (karakter verileri için)
+
+## Kullanılabilir Komutlar
+
+Proje dizininde şu komutları çalıştırabilirsiniz:
+
+### `npm install`
+
+Gerekli bağımlılıkları yükler.
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Uygulamayı geliştirme modunda çalıştırır.\
+Tarayıcıda görüntülemek için [http://localhost:3000](http://localhost:3000) adresini açın.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Düzenleme yaptığınızda sayfa yeniden yüklenir.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Uygulamayı üretim için `build` klasörüne derler.\
+React'ı üretim modunda doğru şekilde paketler ve en iyi performans için derlemeyi optimize eder.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Canlı Demo
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Uygulamanın GitHub Pages üzerinde dağıtılmış canlı demosunu buradan görüntüleyebilirsiniz:
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Live server 
-https://yucel-gumus.github.io/RickAndMorty_MultiSelect/
-
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+[https://yucel-gumus.github.io/RickAndMorty_MultiSelect/](https://yucel-gumus.github.io/RickAndMorty_MultiSelect/)

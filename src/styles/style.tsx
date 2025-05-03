@@ -74,7 +74,7 @@ export const ImageContainerStyle = {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  width: "50%",
+  width: "30%",
   height: "auto",
   margin: "0 auto",
   marginTop: "10px",
