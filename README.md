@@ -1,49 +1,75 @@
-# Rick and Morty Çoklu Seçim Karakter Arama
+# Rick and Morty — Çoklu Seçim Karakter Arama
 
-Bu proje, kullanıcıların Rick and Morty karakterlerini aramasına ve arama sonuçlarından birden fazla karakter seçmesine olanak tanıyan, TypeScript ile oluşturulmuş bir React uygulamasıdır.
+[Rick and Morty API](https://rickandmortyapi.com/) üzerinden karakter arayan, **çoklu seçim** destekleyen, klavye ile gezilebilen React + TypeScript demo uygulaması.
+
+**Canlı:** [yucel-gumus.github.io/RickAndMorty_MultiSelect](https://yucel-gumus.github.io/RickAndMorty_MultiSelect/)  
+**GitHub:** [yucel-gumus/RickAndMorty_MultiSelect](https://github.com/yucel-gumus/RickAndMorty_MultiSelect)
+
+---
 
 ## Özellikler
 
-*   **Karakter Arama:** Rick and Morty evreninden karakterleri arayın.
-*   **Çoklu Seçim:** Birden fazla karakter seçin ve seçimini kaldırın.
-*   **Dinamik Sonuçlar:** Siz yazdıkça arama sonuçları dinamik olarak güncellenir.
-*   **Vurgulama:** Arama sorgusu, sonuçlardaki karakter adları içinde vurgulanır.
-*   **Klavye Navigasyonu:** Ok tuşlarını kullanarak arama sonuçlarında gezinin ve Enter/Tab ile seçim yapın.
-*   **Hata Yönetimi:** Veri çekme hataları için uyarılar gösterir.
-*   **Yüklenme Durumu:** Veri çekilirken bir yüklenme göstergesi gösterir.
-*   **Duyarlı Tasarım:** Temel duyarlı tasarım.
+- Anlık arama (debounce / filtre ile API veya cache)
+- **Multi-select** — birden fazla karakter seçimi ve kaldırma
+- Arama teriminin sonuç adlarında **vurgulanması**
+- Ok tuşları + Enter/Tab ile klavye navigasyonu
+- Yükleme ve hata durumları (SweetAlert2)
+- Responsive layout
+- Create React App tabanlı production build + GitHub Pages
 
-## Kullanılan Teknolojiler
+---
 
-*   React
-*   TypeScript
-*   React Select (veya benzer özel implementasyon)
-*   SweetAlert2 (bildirimler için)
-*   CSS (stil için)
-*   Rick and Morty API (karakter verileri için)
+## Teknoloji
 
-## Kullanılabilir Komutlar
+| Katman | Stack |
+|--------|--------|
+| UI | React, TypeScript |
+| Bildirim | SweetAlert2 |
+| Veri | Rick and Morty REST API |
+| Stil | CSS modules / component CSS |
 
-Proje dizininde şu komutları çalıştırabilirsiniz:
+---
 
-### `npm install`
+## Kurulum
 
-Gerekli bağımlılıkları yükler.
+```bash
+git clone https://github.com/yucel-gumus/RickAndMorty_MultiSelect.git
+cd RickAndMorty_MultiSelect
+npm install
+npm start
+```
 
-### `npm start`
+Tarayıcı: `http://localhost:3000`
 
-Uygulamayı geliştirme modunda çalıştırır.\
-Tarayıcıda görüntülemek için [http://localhost:3000](http://localhost:3000) adresini açın.
+---
 
-Düzenleme yaptığınızda sayfa yeniden yüklenir.
+## Script'ler
 
-### `npm run build`
+| Komut | Açıklama |
+|-------|----------|
+| `npm start` | Geliştirme sunucusu |
+| `npm run build` | `build/` üretim paketi |
+| `npm test` | CRA test runner |
 
-Uygulamayı üretim için `build` klasörüne derler.\
-React'ı üretim modunda doğru şekilde paketler ve en iyi performans için derlemeyi optimize eder.
+GitHub Pages deploy: `package.json` `homepage` ve `gh-pages` workflow veya manuel `build` yükleme.
 
-## Canlı Demo
+---
 
-Uygulamanın GitHub Pages üzerinde dağıtılmış canlı demosunu buradan görüntüleyebilirsiniz:
+## Uygulama akışı
 
-[https://yucel-gumus.github.io/RickAndMorty_MultiSelect/](https://yucel-gumus.github.io/RickAndMorty_MultiSelect/)
+1. Kullanıcı arama kutusuna yazar
+2. API'den karakter listesi çekilir / filtrelenir
+3. Dropdown'da sonuçlar; seçilenler chip/tag olarak gösterilir
+4. Hata veya boş sonuç için kullanıcı bilgilendirilir
+
+---
+
+## API notları
+
+Rick and Morty API ücretsiz ve rate-limit'lidir; production'da aşırı istekten kaçının. Gerekirse sonuçları oturum içi cache'leyin.
+
+---
+
+## Lisans
+
+MIT veya repo varsayılanı.
