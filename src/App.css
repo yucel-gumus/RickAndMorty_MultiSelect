@@ -1,5 +1,14 @@
 .App {
   text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #EDF3EE;
+  color: #253341;
+}
+
+.flex-1 {
+  flex: 1;
 }
 
 .App-logo {
@@ -14,18 +23,82 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #DCE3EA;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #253341;
 }
 
 .App-link {
-  color: #61dafb;
+  color: #AB421C;
+}
+
+.rm-input::placeholder {
+  color: #3E5164;
+  opacity: 1;
+}
+
+.rm-input:focus {
+  border-bottom-color: #EC7D55;
+}
+
+.rm-chip-remove {
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.rm-chip-remove:hover {
+  background-color: #AB421C !important;
+  color: #F5F9F5 !important;
+}
+
+.rm-chip-remove:focus-visible,
+.rm-input:focus-visible {
+  outline: 2px solid #EC7D55;
+  outline-offset: 2px;
+}
+
+.rm-dropdown::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.rm-dropdown::-webkit-scrollbar-track {
+  background: #DCE3EA;
+  border-radius: 8px;
+}
+
+.rm-dropdown::-webkit-scrollbar-thumb {
+  background: #BCC7D2;
+  border-radius: 8px;
+}
+
+.rm-dropdown::-webkit-scrollbar-thumb:hover {
+  background: #3E5164;
+}
+
+.rm-result-item {
+  background-color: transparent;
+  color: #253341;
+  transition: background-color 0.15s ease;
+  text-align: left;
+  padding: 6px 12px;
+}
+
+.rm-result-item:hover {
+  background-color: #DBE6DD;
+}
+
+.rm-result-item.is-selected {
+  background-color: #DBE6DD;
+}
+
+.rm-result-item.is-highlighted,
+.rm-result-item.is-highlighted:hover {
+  background-color: #F2A488;
 }
 
 @keyframes App-logo-spin {

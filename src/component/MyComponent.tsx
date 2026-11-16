@@ -61,6 +61,7 @@ const MyComponent: React.FC = () => {
         <div style={{ position: 'relative' }}>
             <img
                 src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/489102/rm-logo.png"
+                alt="Rick and Morty"
                 style={ImageContainerStyle}
             />
             <SelectedCharacters
@@ -71,7 +72,7 @@ const MyComponent: React.FC = () => {
                 onKeyDown={onKeyDown}
                 inputRef={inputRef} />
             {loading && (
-                <div style={{ marginLeft: "450px" }}>
+                <div style={{ textAlign: 'center', marginTop: '14px', color: '#3E5164', fontWeight: 500 }}>
                     <span>Yükleniyor...</span>
                 </div>
             )}

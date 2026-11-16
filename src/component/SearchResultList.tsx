@@ -4,7 +4,7 @@ import { PropsResult } from '../utils/Interface';
 import { popupStyle } from '../styles/style';
 const SearchResultList: React.FC<PropsResult> = ({ results, selectedCharacters, toggleSelected, query, popupRef, highlightedIndex, highlightCharacterName }) => {
   return (
-    <div style={popupStyle} ref={popupRef}>
+    <div className="rm-dropdown" style={popupStyle} ref={popupRef}>
       {results.map((result, index) => (
         <SearchResultItem
           key={result.id}

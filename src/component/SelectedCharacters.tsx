@@ -11,11 +11,13 @@ const SelectedCharacters: React.FC<PropsCharacter> = ({ selectedCharacters, remo
             <span
               style={selectedCharactersName}
             >
-              <span style={{ marginLeft: "10px", fontSize: "18px" }}>
+              <span style={{ marginLeft: "4px", fontSize: "18px", color: "#253341" }}>
                 {character.name}
               </span>
               <button
                 type="button"
+                className="rm-chip-remove"
+                aria-label={`Kaldır: ${character.name}`}
                 style={buttonX}
                 onClick={() => removeFromSelected(character.id)}
               >
@@ -28,6 +30,7 @@ const SelectedCharacters: React.FC<PropsCharacter> = ({ selectedCharacters, remo
         <input
           ref={inputRef}
           type="text"
+          className="rm-input"
           value={value}
           placeholder='Lütfen Karakter Adı Giriniz'
           onChange={(e) => onChange(e.target.value)}
